@@ -1,8 +1,9 @@
-# Commerce Committees, 120th
+# Committees, 120th
 
-Senate Commerce and House Energy & Commerce: the 119th roster next to a projected 120th, assuming Democrats hold 56 Senate and 264 House seats. Hover or tap a seat for the member.
+Key Senate and House committees: the 119th roster next to a projected 120th, assuming Democrats hold 56 Senate and 264 House seats. Pick a committee from the dropdown (Senate Commerce / House E&C by default); hover or tap a seat for the member.
 
-Live at https://commerce-committees-120th.pages.dev (Cloudflare Pages).
+Live at https://committees-120th.pages.dev (Cloudflare Pages).
 
-- `public/index.html` is the whole page; the rosters are the `SEN` and `HOU` arrays in its script.
+- `public/data.js` holds the rosters: `PAIRS` drives the dropdown, `COMMITTEES` has each committee's members, status and notes.
+- `public/index.html` renders them. Without a `size120`, a committee keeps its 119th size and splits at the chamber ratio; returning Republicans past that count are shown as bumped, most junior first.
 - `./deploy.sh` publishes `public/`.

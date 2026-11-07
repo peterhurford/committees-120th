@@ -5,5 +5,5 @@ Key Senate and House committees: the 119th roster next to a projected 120th, ass
 Live at https://committees-120th.pages.dev (Cloudflare Pages).
 
 - `public/data.js` holds the rosters: `PAIRS` drives the dropdown, `COMMITTEES` has each committee's members, status and notes.
-- `public/index.html` renders them. Without a `size120`, a committee keeps its 119th size and splits at the chamber ratio; returning Republicans past that count are shown as bumped, most junior first.
+- `public/index.html` renders them. Without a `size120`, a committee keeps its 119th size and splits at the chamber ratio; if more members return than a party gets, the page shows the seats cut without naming who loses one.
 - `./deploy.sh` publishes `public/`.
